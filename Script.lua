@@ -35,7 +35,9 @@ MinimizeButton({
 ------ Tab     
      local Tab1o = MakeTab({Name = "công cụ"})
      local Tab2o = MakeTab({Name = "Steal a Brainrot"})
+     local Tab3o = MakeTab({Name = "evade"})
 ------- BUTTON
+-- công cụ
   AddButton(Tab1o, {
      Name = "Invisible(tàng hình)",
     Callback = function()
@@ -143,7 +145,7 @@ end)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lyraEz/lol/refs/heads/main/loaders/NewWallhop.lua"))()
   end
   })
-
+-- Steal a Brainrot
 AddButton(Tab2o, {
      Name = "DelfiScript",
     Callback = function()
@@ -152,31 +154,7 @@ AddButton(Tab2o, {
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet("https://pastefy.app/eCzs7DNQ/raw"))()
-  end
-  })
-  
-  AddButton(Tab2o, {
-     Name = "FaDhen",
-    Callback = function()
-	  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Akbar123s/Script-Roblox-/refs/heads/main/nabaruBrainrot"))()
-  end
-  })
-  
-    AddButton(Tab2o, {
-     Name = "Steal a Brainrot MOD",
-    Callback = function()
-	  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/StealaBrainrotMOD"))() 
+loadstring(game:HttpGet("https://pastefy.app/c4XAWtLn/raw"))()
   end
   })
   
@@ -189,5 +167,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/OnlyLifea/instastealer/refs/heads/main/main"))()    
+  end
+  })
+-- evade
+  AddButton(Tab2o, {
+     Name = "Draconic Hub X(có key)",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Nyxarth910/Draconic-Hub-X/refs/heads/main/files/Evade/Overhaul.lua'))()      
   end
   })
