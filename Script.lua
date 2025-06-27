@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua"))()
 
-local allowedUsers = {"hoangvuQT2012k", "hoangvuVNG2012k", "anh_ngunot"}
+local allowedUsers = {"hoangvuQT2012k","hoangvuVNG2012k", "anh_ngunot"}
 local playerName = game.Players.LocalPlayer.Name
 local bypassKey = table.find(allowedUsers, playerName) ~= nil
 
@@ -38,6 +38,18 @@ MinimizeButton({
      local Tab3o = MakeTab({Name = "evade"})
 ------- BUTTON
 -- công cụ
+AddButton(Tab1o, {
+     Name = "X Ghost Hub X",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+  end
+  })
+  
   AddButton(Tab1o, {
      Name = "Invisible(tàng hình)",
     Callback = function()
@@ -46,7 +58,7 @@ MinimizeButton({
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Invisible-script-20557"))()
   end
   })
   
@@ -170,7 +182,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/OnlyLifea/instasteale
   end
   })
 -- evade
-  AddButton(Tab2o, {
+  AddButton(Tab3o, {
      Name = "Draconic Hub X(có key)",
     Callback = function()
 	  local Settings = {
