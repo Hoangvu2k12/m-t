@@ -36,7 +36,7 @@ MinimizeButton({
      local Tab1o = MakeTab({Name = "công cụ"})
      local Tab2o = MakeTab({Name = "Steal a Brainrot"})
      local Tab3o = MakeTab({Name = "evade"})
-     local Tab4o = MakeTab({Name = "the strongest battlegrounds "})
+     local Tab4o = MakeTab({Name = "TSBG"})
 ------- BUTTON
 -- công cụ
 AddButton(Tab1o, {
