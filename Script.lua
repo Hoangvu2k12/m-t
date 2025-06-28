@@ -36,6 +36,7 @@ MinimizeButton({
      local Tab1o = MakeTab({Name = "công cụ"})
      local Tab2o = MakeTab({Name = "Steal a Brainrot"})
      local Tab3o = MakeTab({Name = "evade"})
+     local Tab4o = MakeTab({Name = "the strongest battlegrounds "})
 ------- BUTTON
 -- công cụ
 AddButton(Tab1o, {
@@ -191,5 +192,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/OnlyLifea/instasteale
 }
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Nyxarth910/Draconic-Hub-X/refs/heads/main/files/Evade/Overhaul.lua'))()      
+  end
+  })
+--the strongest battlegrounds 
+AddButton(Tab4o, {
+     Name = "VexonHub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"))()      
   end
   })
