@@ -13,7 +13,7 @@ local Window = MakeWindow({
         KeySystem = not bypassKey,
         Title = "Key System",
         Description = "",
-        KeyLink = "",
+        KeyLink = "https://rekonise.com/key-vu-roblox-u7nhi",
         Keys = {"296436"},
         Notifi = {
             Notifications = true,
@@ -112,38 +112,14 @@ loadstring(game:HttpGet("https://pastebin.com/raw/qtZt0Nzb"))()
   })
   
    AddButton(Tab1o, {
-     Name = "esp xịn hơn",
+     Name = "esp",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
 }
 
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-
-local function highlightPlayers()
-    for _, player in ipairs(Players:GetPlayers()) do
-        if player.Character and player.Character:FindFirstChild("Humanoid") then
-            local highlight = player.Character:FindFirstChild("Highlight")
-            
-            -- Chỉ tạo mới nếu chưa có đối tượng Highlight
-            if not highlight then
-                highlight = Instance.new("Highlight")
-                highlight.Name = "Highlight"
-                highlight.Parent = player.Character
-                highlight.FillColor = Color3.fromRGB(0, 255, 0)
-                highlight.FillTransparency = 0.5
-                highlight.OutlineColor = Color3.fromRGB(0, 0, 0)
-                highlight.OutlineTransparency = 0
-            end
-        end
-    end
-end
-
-RunService.Heartbeat:Connect(function()
-    highlightPlayers()
-end)
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Hoangvu2k12/m-t/refs/heads/main/esp.lua")))()
   end
   })
    
@@ -167,19 +143,43 @@ AddButton(Tab2o, {
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet("https://pastefy.app/c4XAWtLn/raw"))()
+loadstring(game:HttpGet('https://pastefy.app/32euNuk1/raw'))()
   end
   })
   
   AddButton(Tab2o, {
-     Name = "Steal | Lifea's Hub",
+     Name = "FaDhen",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/OnlyLifea/instastealer/refs/heads/main/main"))()    
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Akbar123s/Script-Roblox-/refs/heads/main/nabaruBrainrot"))()
+  end
+  })
+  
+  AddButton(Tab2o, {
+     Name = "Makal Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+local a,b,c=loadstring,(syn and syn.request)or(http and http.request)or(request)or(http_request),assert;c(a and b,"Executor not Supported")a(b({Url="https://makalhub.vercel.app/api/script/loader",Method="GET"}).Body)()
+  end
+  })
+  
+    AddButton(Tab2o, {
+     Name = "REN HUB",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet(("https://pastebin.com/raw/BXNVEnKk")))()
   end
   })
 -- evade
@@ -204,5 +204,17 @@ AddButton(Tab4o, {
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"))()      
+  end
+  })
+  
+  AddButton(Tab4o, {
+     Name = "Aimbot + Auto block",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()  
   end
   })
