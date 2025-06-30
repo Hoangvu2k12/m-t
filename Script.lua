@@ -1,6 +1,31 @@
+-- === TỰ ĐỘNG LƯU KEY ===
+local keyFile = "saved_key.txt"
+local savedKey
+
+-- Nếu đã lưu key trước đó
+if isfile and isfile(keyFile) then
+    savedKey = readfile(keyFile)
+else
+    -- Nếu chưa có key, yêu cầu nhập và lưu lại
+    print("Vui lòng nhập key:")
+    savedKey = io.read()
+    if writefile then
+        writefile(keyFile, savedKey)
+    end
+end
+
+-- Kiểm tra key
+if savedKey == "your_valid_key_here" then
+    print("✅ Key hợp lệ!")
+else
+    print("❌ Key không hợp lệ!")
+    return
+end
+-- === HẾT PHẦN KEY ===
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua"))()
 
-local allowedUsers = {"hoangvuQT2012k","hoangvuVNG2012k", "anh_ngunot"}
+local allowedUsers = {"hoangvuQT2012k","hoangvuVNG2012k",}
 local playerName = game.Players.LocalPlayer.Name
 local bypassKey = table.find(allowedUsers, playerName) ~= nil
 
