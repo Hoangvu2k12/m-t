@@ -46,7 +46,7 @@ local Window = Rayfield:CreateWindow({
 local Tab1 = Window:CreateTab("công cụ")
 local Tab2 = Window:CreateTab("Steal a Brainrot")
 local Tab3 = Window:CreateTab("evade")
-local Tab2 = Window:CreateTab("TSB")
+local Tab4 = Window:CreateTab("TSB")
 ----cái nút
 --công cụ
 Tab1:CreateButton({
