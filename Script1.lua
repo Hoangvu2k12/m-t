@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua"))()
 
-local allowedUsers = {"hoangvuQT2012k","hoangvuVNG2012k",}
+local allowedUsers = {"hoangvuQT2012k","hoangvuVNG2012k", "anh_langu"}
 local playerName = game.Players.LocalPlayer.Name
 local bypassKey = table.find(allowedUsers, playerName) ~= nil
 
@@ -14,7 +14,7 @@ local Window = MakeWindow({
         Title = "Key System",
         Description = "",
         KeyLink = "https://rekonise.com/key-vu-roblox-u7nhi",
-        Keys = {"9"},
+        Keys = {"296436"},
         Notifi = {
             Notifications = true,
             CorrectKey = "Running the Script...",
@@ -39,7 +39,19 @@ MinimizeButton({
      local Tab4o = MakeTab({Name = "TSBG"})
 ------- BUTTON
 -- công cụ
-AddButton(Tab1o, {
+   AddButton(Tab1o, {
+     Name = "Infinite yield",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+  end
+  })
+  
+  AddButton(Tab1o, {
      Name = "X Ghost Hub X",
     Callback = function()
 	  local Settings = {
@@ -62,8 +74,20 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Invisible-script-20557"))()
   end
   })
-  
+ 
   AddButton(Tab1o, {
+     Name = "kill aura (yêu cầu có kiếm)",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rawbr10/test/refs/heads/main/Kill%20All%20Script%20Universal"))()
+  end
+  })
+  
+      AddButton(Tab1o, {
      Name = "FlyGuiV3",
     Callback = function()
 	  local Settings = {
@@ -75,15 +99,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/
   end
   })
   
-   AddButton(Tab1o, {
-     Name = "Infinite yield",
+    AddButton(Tab1o, {
+     Name = "Wall hop",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lyraEz/lol/refs/heads/main/loaders/NewWallhop.lua"))()
   end
   })
   
@@ -120,18 +144,6 @@ loadstring(game:HttpGet("https://pastebin.com/raw/qtZt0Nzb"))()
 }
 
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Hoangvu2k12/m-t/refs/heads/main/esp.lua")))()
-  end
-  })
-   
-  AddButton(Tab1o, {
-     Name = "Wall hop",
-    Callback = function()
-	  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lyraEz/lol/refs/heads/main/loaders/NewWallhop.lua"))()
   end
   })
 -- Steal a Brainrot

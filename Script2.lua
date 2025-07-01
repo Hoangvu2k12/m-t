@@ -2,8 +2,24 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- Tên chủ tài khoản (không cần key)
-local ownerName = "anh_langu", "hoangvuQT2012k", "hoangvuVNG2012k"
-local isOwner = (game.Players.LocalPlayer.Name == ownerName)
+local whitelist = {
+    "anh_langu",
+    "hoangvuQT2012k",
+    "hoangvuVNG2012k",
+}
+
+local playerName = game.Players.LocalPlayer.Name
+
+local function isInWhitelist(name)
+    for _, allowedName in ipairs(whitelist) do
+        if name == allowedName then
+            return true
+        end
+    end
+    return false
+end
+
+local isOwner = isInWhitelist(playerName)
 
 ----chỉnh sửa GUI
 local Window = Rayfield:CreateWindow({
@@ -51,6 +67,13 @@ local Tab5 = Window:CreateTab("Murder Mystery 2")
 ----cái nút
 --công cụ
 Tab1:CreateButton({
+   Name = "Infinite yield",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+
+Tab1:CreateButton({
    Name = "X Ghost Hub X",
    Callback = function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
@@ -65,6 +88,13 @@ Tab1:CreateButton({
 })
 
 Tab1:CreateButton({
+   Name = "kill aura (yêu cầu có kiếm)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Rawbr10/test/refs/heads/main/Kill%20All%20Script%20Universal"))()
+   end,
+})
+
+Tab1:CreateButton({
    Name = "FlyGuiV3",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
@@ -72,9 +102,9 @@ Tab1:CreateButton({
 })
 
 Tab1:CreateButton({
-   Name = "Infinite yield",
+   Name = "Wall hop",
    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/lyraEz/lol/refs/heads/main/loaders/NewWallhop.lua"))()
    end,
 })
 
@@ -96,13 +126,6 @@ Tab1:CreateButton({
    Name = "esp",
    Callback = function()
       loadstring(game:HttpGet(("https://raw.githubusercontent.com/Hoangvu2k12/m-t/refs/heads/main/esp.lua")))()
-   end,
-})
-
-Tab1:CreateButton({
-   Name = "Wall hop",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/lyraEz/lol/refs/heads/main/loaders/NewWallhop.lua"))()
    end,
 })
 --Steal a Brainrot
