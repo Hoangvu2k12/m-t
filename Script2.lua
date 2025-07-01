@@ -47,6 +47,7 @@ local Tab1 = Window:CreateTab("công cụ")
 local Tab2 = Window:CreateTab("Steal a Brainrot")
 local Tab3 = Window:CreateTab("evade")
 local Tab4 = Window:CreateTab("TSB")
+local Tab5 = Window:CreateTab("Murder Mystery 2")
 ----cái nút
 --công cụ
 Tab1:CreateButton({
@@ -151,5 +152,12 @@ Tab4:CreateButton({
    Name = "Aimbot + Auto block",
    Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
+   end,
+})
+--Murder Mystery 2
+Tab5:CreateButton({
+   Name = "XHub",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
    end,
 })
