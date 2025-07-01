@@ -37,6 +37,10 @@ MinimizeButton({
      local Tab2o = MakeTab({Name = "Steal a Brainrot"})
      local Tab3o = MakeTab({Name = "evade"})
      local Tab4o = MakeTab({Name = "TSBG"})
+     local Tab5o = MakeTab({Name = "mm2"})
+     local Tab6o = MakeTab({Name = "Dead Rails"})
+     local Tab7o = MakeTab({Name = "doors"})
+     
 ------- BUTTON
 -- công cụ
    AddButton(Tab1o, {
@@ -228,5 +232,54 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()  
+  end
+  })
+----Murder Mystery 2  
+  AddButton(Tab5o, {
+     Name = "XHub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
+  end
+  })  
+  
+--Dead Rails
+AddButton(Tab6o, {
+     Name = "NullFire",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
+  end
+  })
+--doors
+AddButton(Tab7o, {
+     Name = "mspaint v3",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+  end
+  })
+  
+AddButton(Tab7o, {
+     Name = "NullFire",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TeamNullFire/NullFire/main/loader.lua"))()
   end
   })

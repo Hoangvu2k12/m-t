@@ -64,6 +64,8 @@ local Tab2 = Window:CreateTab("Steal a Brainrot")
 local Tab3 = Window:CreateTab("evade")
 local Tab4 = Window:CreateTab("TSB")
 local Tab5 = Window:CreateTab("Murder Mystery 2")
+local Tab6 = Window:CreateTab("Dead Rails")
+local Tab7 = Window:CreateTab("doors")
 ----cái nút
 --công cụ
 Tab1:CreateButton({
@@ -182,5 +184,26 @@ Tab5:CreateButton({
    Name = "XHub",
    Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
+   end,
+})
+--Dead Rails
+Tab6:CreateButton({
+   Name = "null Fire",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
+   end,
+})
+--doors
+Tab7:CreateButton({
+   Name = "mspaint v3",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+   end,
+})
+
+Tab7:CreateButton({
+   Name = "nullfire",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/TeamNullFire/NullFire/main/loader.lua"))()
    end,
 })
