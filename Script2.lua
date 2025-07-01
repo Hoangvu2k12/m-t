@@ -2,7 +2,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- Tên chủ tài khoản (không cần key)
-local ownerName = "anh_langu"
+local ownerName = "anh_langu", "hoangvuQT2012k", "hoangvuVNG2012k"
 local isOwner = (game.Players.LocalPlayer.Name == ownerName)
 
 ----chỉnh sửa GUI
