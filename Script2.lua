@@ -104,6 +104,13 @@ Tab1:CreateButton({
 })
 
 Tab1:CreateButton({
+   Name = "vehicle fly v3",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/refs/heads/main/Roblox%20Fe%20Vehicle%20Fly%20GUI%20script'))()
+   end,
+})
+
+Tab1:CreateButton({
    Name = "Wall hop",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/lyraEz/lol/refs/heads/main/loaders/NewWallhop.lua"))()
@@ -193,11 +200,25 @@ Tab6:CreateButton({
      loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
    end,
 })
+
+Tab6:CreateButton({
+   Name = "tổng hợp teleport",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/DEADRAILSOP.github.io/refs/heads/main/ringta.lua"))()
+   end,
+})
+
+Tab6:CreateButton({
+   Name = "tổng hợp teleport",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba%20/Scripts/main/DeadRails"))()
+   end,
+})
 --doors
 Tab7:CreateButton({
-   Name = "mspaint v3",
+   Name = "mspaint v4(có key)",
    Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/002c19202c9946e6047b0c6e0ad51f84.lua"))()
    end,
 })
 

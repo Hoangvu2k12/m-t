@@ -103,6 +103,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/
   end
   })
   
+        AddButton(Tab1o, {
+     Name = "vehicle fly v3",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/refs/heads/main/Roblox%20Fe%20Vehicle%20Fly%20GUI%20script'))()
+  end
+  })
+  
     AddButton(Tab1o, {
      Name = "Wall hop",
     Callback = function()
@@ -259,16 +271,40 @@ AddButton(Tab6o, {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
   end
   })
---doors
-AddButton(Tab7o, {
-     Name = "mspaint v3",
+  
+  AddButton(Tab6o, {
+     Name = "tổng hợp teleport",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/DEADRAILSOP.github.io/refs/heads/main/ringta.lua"))()
+  end
+  })
+  
+  AddButton(Tab6o, {
+     Name = "cơ bản",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba%20/Scripts/main/DeadRails"))()
+  end
+  })
+--doors
+AddButton(Tab7o, {
+     Name = "mspaint v4(có key)/",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/002c19202c9946e6047b0c6e0ad51f84.lua"))() 
   end
   })
   
