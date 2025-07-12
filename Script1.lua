@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua"))()
 
-local allowedUsers = {"hoangvuQT2012k","hoangvuVNG2012k", "anh_langu"}
+local allowedUsers = {"hoangvuQT2012k","hoangvuVNG2012k", "tao_thunghiem"}
 local playerName = game.Players.LocalPlayer.Name
 local bypassKey = table.find(allowedUsers, playerName) ~= nil
 
@@ -14,7 +14,7 @@ local Window = MakeWindow({
         Title = "Key System",
         Description = "",
         KeyLink = "https://rekonise.com/key-vu-roblox-u7nhi",
-        Keys = {"296436"},
+        Keys = {"9"},
         Notifi = {
             Notifications = true,
             CorrectKey = "Running the Script...",

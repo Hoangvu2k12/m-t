@@ -3,7 +3,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- Tên chủ tài khoản (không cần key)
 local whitelist = {
-    "anh_langu",
+    "tao_thunghiem",
     "hoangvuQT2012k",
     "hoangvuVNG2012k",
 }
