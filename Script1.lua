@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/main/UiREDzV2.lua"))()
 
 local allowedUsers = {"hoangvuQT2012k","hoangvuVNG2012k", "tao_thunghiem"}
 local playerName = game.Players.LocalPlayer.Name
@@ -80,7 +80,7 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Invisible-s
   })
  
   AddButton(Tab1o, {
-     Name = "kill aura (yêu cầu có kiếm)",
+     Name = "kill aura(yêu cầu có kiếm)",
     Callback = function()
 	  local Settings = {
   JoinTeam = "Pirates"; -- Pirates/Marines
@@ -111,7 +111,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/refs/heads/main/Roblox%20Fe%20Vehicle%20Fly%20GUI%20script'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Vehicle%20Fly%20Gui'))()
   end
   })
   
@@ -171,7 +171,7 @@ AddButton(Tab2o, {
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet('https://pastefy.app/32euNuk1/raw'))()
+loadstring(game:HttpGet('https://pastefy.app/44Il7q8s/raw'))()
   end
   })
   
@@ -183,33 +183,10 @@ loadstring(game:HttpGet('https://pastefy.app/32euNuk1/raw'))()
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Akbar123s/Script-Roblox-/refs/heads/main/nabaruBrainrot"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Akbar123s/Script-Roblox-/refs/heads/main/NabaruKazoo"))()
   end
   })
   
-  AddButton(Tab2o, {
-     Name = "Makal Hub",
-    Callback = function()
-	  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-local a,b,c=loadstring,(syn and syn.request)or(http and http.request)or(request)or(http_request),assert;c(a and b,"Executor not Supported")a(b({Url="https://makalhub.vercel.app/api/script/loader",Method="GET"}).Body)()
-  end
-  })
-  
-    AddButton(Tab2o, {
-     Name = "REN HUB",
-    Callback = function()
-	  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-loadstring(game:HttpGet(("https://pastebin.com/raw/BXNVEnKk")))()
-  end
-  })
 -- evade
   AddButton(Tab3o, {
      Name = "Draconic Hub X(có key)",
@@ -293,6 +270,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/DEADRAILSOP.g
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba%20/Scripts/main/DeadRails"))()
+  end
+  })
+  
+    AddButton(Tab6o, {
+     Name = "opautoswingv2",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeadHarse/Dusty/refs/heads/main/OPAUTOSWINGV2"))()
   end
   })
 --doors
