@@ -1,34 +1,56 @@
+-- ✅ Cải tiến ESP Highlight (Adornee + Quản lý đúng cách)
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
 
-local function onCharacter(character)
-  if not character then return end
-  local highlight = character:FindFirstChild("ESP_Highlight")
-  if not highlight then
-    highlight = Instance.new("Highlight")
-    highlight.Name = "ESP_Highlight"
-    highlight.Adornee = character   -- hoặc HumanoidRootPart
-    highlight.Enabled = true
-    highlight.FillColor = Color3.new(0,1,0)
-    highlight.FillTransparency = 0.5
-    highlight.OutlineColor = Color3.new(0,0,0)
-    highlight.OutlineTransparency = 0
-    highlight.Parent = workspace     -- đặt ngoài Character để tránh bị xoá
-  end
+-- Gán highlight vào từng player (trừ chính mình)
+local function addHighlight(player)
+	if player == LocalPlayer then return end
+	if not player.Character or not player.Character:FindFirstChild("HumanoidRootPart") then return end
+
+	local already = player.Character:FindFirstChild("ESP_Highlight")
+	if already then return end
+
+	local highlight = Instance.new("Highlight")
+	highlight.Name = "ESP_Highlight"
+	highlight.FillColor = Color3.fromRGB(255, 0, 0) -- màu đỏ
+	highlight.FillTransparency = 0.3
+	highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+	highlight.OutlineTransparency = 0
+	highlight.Adornee = player.Character -- hoặc .HumanoidRootPart
+	highlight.Enabled = true
+	highlight.Parent = player.Character
 end
 
-local function cleanupCharacter(character)
-  if character then
-    local h = character:FindFirstChild("ESP_Highlight")
-    if h then h:Destroy() end
-  end
+-- Xoá highlight khi người chơi rời game hoặc chết
+local function removeHighlight(player)
+	if player.Character then
+		local h = player.Character:FindFirstChild("ESP_Highlight")
+		if h then h:Destroy() end
+	end
 end
 
-Players.PlayerAdded:Connect(function(plr)
-  plr.CharacterAdded:Connect(onCharacter)
-  plr.CharacterRemoving:Connect(cleanupCharacter)
+-- Kết nối với player mới
+Players.PlayerAdded:Connect(function(player)
+	player.CharacterAdded:Connect(function()
+		wait(1) -- đợi nhân vật load
+		addHighlight(player)
+	end)
+	player.CharacterRemoving:Connect(function()
+		removeHighlight(player)
+	end)
 end)
 
-for _, plr in ipairs(Players:GetPlayers()) do
-  if plr.Character then onCharacter(plr.Character) end
+-- Khởi tạo cho người đã có sẵn trong game
+for _, player in ipairs(Players:GetPlayers()) do
+	if player ~= LocalPlayer and player.Character then
+		addHighlight(player)
+	end
+	player.CharacterAdded:Connect(function()
+		wait(1)
+		addHighlight(player)
+	end)
+	player.CharacterRemoving:Connect(function()
+		removeHighlight(player)
+	end)
 end
